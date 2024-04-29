@@ -22,10 +22,10 @@ const ProductPage = () => {
     //         setProducts(response.data);
     //     })
     // },[])
-
+ console.log('data', data)
     return (
         <div>
-            <ProductView products={isLoading ? [] : data.data} />
+            <ProductView products={isLoading ? [] : data?.data} />
         </div>
     )
 }
